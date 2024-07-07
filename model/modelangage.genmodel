@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/modelangage/src-gen" creationIcons="false" editDirectory="/modelangage.edit/src-gen"
+    editorDirectory="/modelangage.editor/src-gen" modelPluginID="modelangage" modelName="Modelangage"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>modelangage.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Modelangage" disposableProviderFactory="true" ecorePackage="modelangage.ecore#/">
+    <genClasses ecoreClass="modelangage.ecore#//System">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modelangage.ecore#//System/fichier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modelangage.ecore#//System/dossier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//System/name"/>
+    </genClasses>
+    <genClasses ecoreClass="modelangage.ecore#//Fichier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//Fichier/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//Fichier/type"/>
+      <genOperations ecoreOperation="modelangage.ecore#//Fichier/Open"/>
+      <genOperations ecoreOperation="modelangage.ecore#//Fichier/Close"/>
+    </genClasses>
+    <genClasses ecoreClass="modelangage.ecore#//Application">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//Application/name_app"/>
+    </genClasses>
+    <genClasses ecoreClass="modelangage.ecore#//File">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//File/extension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//File/name_file"/>
+      <genOperations ecoreOperation="modelangage.ecore#//File/create"/>
+    </genClasses>
+    <genClasses ecoreClass="modelangage.ecore#//Dossier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//Dossier/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modelangage.ecore#//Dossier/fichier"/>
+      <genOperations ecoreOperation="modelangage.ecore#//Dossier/OpenFolder"/>
+      <genOperations ecoreOperation="modelangage.ecore#//Dossier/CloseFolder"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
