@@ -17,6 +17,7 @@
     <genClasses ecoreClass="modelangage.ecore#//Fichier">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//Fichier/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//Fichier/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelangage.ecore#//Fichier/taille"/>
       <genOperations ecoreOperation="modelangage.ecore#//Fichier/Open"/>
       <genOperations ecoreOperation="modelangage.ecore#//Fichier/Close"/>
     </genClasses>
